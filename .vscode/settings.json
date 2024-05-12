@@ -1,0 +1,24 @@
+{
+    "files.associations": {
+        "utility": "cpp",
+        "system_error": "cpp",
+        "xlocale": "cpp",
+        "vector": "cpp",
+        "list": "cpp",
+        "algorithm": "cpp",
+        "iterator": "cpp",
+        "xmemory": "cpp",
+        "xutility": "cpp",
+        "bit": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "initializer_list": "cpp",
+        "limits": "cpp",
+        "type_traits": "cpp",
+        "xstddef": "cpp",
+        "xtr1common": "cpp"
+    }
+}
