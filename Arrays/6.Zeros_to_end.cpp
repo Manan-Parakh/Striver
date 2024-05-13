@@ -66,16 +66,10 @@ void optimal(int arr[], int size)
 {
     // Approach similar to that of removing duplicates...
     int j =0; // j will be sitting at the locn where non zero number shall come
-    for(int i =1; i<size; i++)
+    while(arr[j] != 0) j++;
+    for(int i =j; i<size; i++)
     {
-        while(arr[j] != 0)
-        {
-            j++;
-        }
-        if(arr[i])
-        {
-            swap(arr[i],arr[j]);
-        }
+        if(arr[i] != 0) swap(arr[i],arr[j++]);
     }
 
     //TC -> O(n)
@@ -85,7 +79,7 @@ void optimal(int arr[], int size)
 int main()
 {
     //Move all the zeros of the array to the end
-    int arr[] = {1,0,0,6,4,3,0,2,0,5};
+    int arr[] = {1,0,0,6,4,3,0,2,5};
     int size = sizeof(arr)/4;
 
 ////first_try(arr,size);
