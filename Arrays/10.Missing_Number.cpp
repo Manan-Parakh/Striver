@@ -35,6 +35,12 @@ void brute_better()
    */
 }
 
+void optimal2(int arr[], int N)
+{
+    //Using XOR
+    // Will come back later to it after learning Bit Manipulation
+}
+
 int main()
 {
     //A number N will be given and an array of size N-1 containing num from 1 to N with 1 missing
