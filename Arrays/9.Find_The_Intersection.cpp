@@ -52,7 +52,7 @@ void first_try(int arr1[], int s1, int arr2[], int s2)
     }
     
     //TC -> O(m+n) //Worst case ->  No element is common so it parses through both the arrays completely
-    //SC -> O(min(m,n)) //Worst case -> one array is subset of the other
+    //SC -> O(min(m,n)) //Worst case -> one array is subset of the other, just to return the answer
     
 }
 
