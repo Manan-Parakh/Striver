@@ -11,6 +11,16 @@ void optimal(int arr[], int size)
     cout << x;
 }
 
+void hashing()
+{
+    //For loop -> TO find the biggest element in the array, so that we can define hash array
+    //For loop -> Hash the values
+    //For loop -> Find the hash value with frequency 1
+
+    //TC -> O(3n)
+    //SC -> O(max_element(arr))
+}
+
 int main()
 {
     //give an array, find the element that occurs only once while others occur twice
