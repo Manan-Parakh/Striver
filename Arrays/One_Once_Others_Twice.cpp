@@ -20,6 +20,24 @@ void hashing()
     //TC -> O(3n)
     //SC -> O(max_element(arr))
 }
+void problem_with_hashing()
+{
+    //What if there are negatives? We can hash them but it will be problematic
+    
+    // What if N is of order greater than 8?
+    //We can use map<long long, int>
+    /*
+    for loop -> map[arr[i]]++ -> TC O(Nlog(M)) 
+    where N: number of elements in array and 
+    M is the number of elements in the Map
+    for loop -> To get the value whose freq = 1
+    TC for looping to find value -> O(N/2 + 1)
+
+    Total TC -> O(Nlog(M) + N/2)
+    */
+
+   //For an Unordered map, best TC for adding elements -> O(n) and worst -> O(N^2) although it does not occur much
+}
 
 int main()
 {
