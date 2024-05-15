@@ -39,13 +39,24 @@ void optimal2(int arr[], int N)
 {
     //Using XOR
     // Will come back later to it after learning Bit Manipulation
+    int xor1 = 0;
+    int xor2 = 0;
+    for (int i = 0; i < N-1; i++)
+    {
+        xor1 = xor1^(i+1);
+        xor2 = xor2^arr[i];
+    }
+    xor1 = xor1^N;
+    int num = xor1^xor2;
+    cout << "Missing Number is: " << num;
 }
 
 int main()
 {
     //A number N will be given and an array of size N-1 containing num from 1 to N with 1 missing
     //Find the missing number
-    int N = 5;
-    int arr[] = {1,2,4,5};
-    first_try(arr,N);
+    int N = 6;
+    int arr[] = {1,2,3,4,6};
+////first_try(arr,N);
+    optimal2(arr,N);
 }
