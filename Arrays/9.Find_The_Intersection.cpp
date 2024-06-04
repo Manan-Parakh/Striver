@@ -51,7 +51,7 @@ void first_try(int arr1[], int s1, int arr2[], int s2)
         cout << it << ' ';
     }
     
-    //TC -> O(m+n) //Worst case ->  No element is common so it parses through both the arrays completely
+    //TC -> O(m*n) //Worst case ->  No element is common and all the elements of arr1(smaller array) is larger than the largest element of arr2, so it parses through arr2 for size(arr1) number of times 
     //SC -> O(min(m,n)) //Worst case -> one array is subset of the other, just to return the answer
     
 }
