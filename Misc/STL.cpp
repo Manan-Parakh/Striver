@@ -95,7 +95,7 @@ void pop_count()
     // Counts 1 in the Binary Representation of a Number
     int num = 7;
     int cnt = __builtin_popcount(num);
-    //For long long int -> __builtin_popcount(num)
+    //For long long int -> __builtin_popcountll(num)
     cout << cnt;
 }
 
