@@ -1,44 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void brute()
-{
-    //Extract all the +/- elements and then put them back
-    //TC -> for parsing once -> O(n) and then O(n) for putting things back
-    //SC -> O(n)
-}
-
-void optimal(int arr[], int size)
-{
-    //To Reduce the TC from 2N to N, we will try to do it in one go
-    //Keep two indices -> pos and neg, pos elements -> Even place
-    //Parse through the array and place the elements in their respective place in the new answer array
-    int pos = 0;
-    int neg = 1;
-    int ans[size] = {0};
-    for (int i = 0; i < size; i++)
-    {
-        if (arr[i] > 0)
-        {
-            ans[pos] = arr[i];
-            pos = pos+2;
-        }
-        else
-        {
-            ans[neg] = arr[i];
-            neg = neg+2;
-        }
-    } 
-    //Print the array
-    for (int i = 0; i < size; i++)
-    {
-        cout << ans[i] << " ";
-    }
-
-    //TC -> O(n) : Single iteration
-    //SC -> O(n) : New arrays
-}
-
+// TC-> O(N^2) and SC ->O(1)
 void swap(int* p, int* q)
 {
     int temp = *p;
@@ -70,6 +33,46 @@ void first_try(int arr[], int size)
     }
     //TC -> O(n^2)
     //SC -> O(1) 
+}
+
+//TC-> O(N) and SC -> O(N)
+void brute()
+{
+    //Extract all the +/- elements and then put them back
+    //TC -> for parsing once -> O(n) and then O(n) for putting things back
+    //SC -> O(n)
+}
+
+//TC->O(N) and SC->O(N)
+void optimal(int arr[], int size)
+{
+    //To Reduce the TC from 2N to N, we will try to do it in one go
+    //Keep two indices -> pos and neg, pos elements -> Even place
+    //Parse through the array and place the elements in their respective place in the new answer array
+    int pos = 0;
+    int neg = 1;
+    int ans[size] = {0};
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] > 0)
+        {
+            ans[pos] = arr[i];
+            pos = pos+2;
+        }
+        else
+        {
+            ans[neg] = arr[i];
+            neg = neg+2;
+        }
+    } 
+    //Print the array
+    for (int i = 0; i < size; i++)
+    {
+        cout << ans[i] << " ";
+    }
+
+    //TC -> O(n) : Single iteration
+    //SC -> O(n) : New arrays
 }
 
 int main()
