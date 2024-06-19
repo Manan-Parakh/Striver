@@ -71,16 +71,29 @@ void optimal_moore(int arr[], int size)
         }
         else count++;
     }
-    cout << element;
+    //Check if the Element has freq > size/2
+    count = 0;
+    for (int i = 0; i < size; i++)
+    {
+        if (element == arr[i])
+        {
+            count++;
+        }
+    }
+    if (count > size/2)
+    {
+        cout << element;
+    }
+    else cout << -1;
 
-    //TC -> O(N)
+    //TC -> O(N) + O(N) for checking
     //SC -> O(1)
 }
 
 int main()
 {
     //Given an integer array of size n, find the element that appears MORE than int(n/2) number of times
-    int arr[] = {5,5,7,7,5,5,2,2,5,1,5};
+    int arr[] = {5,5,7,7,5,5,2,2,5,5};
     int size = sizeof(arr)/4;
     
     ////cout << brute(arr,size);
