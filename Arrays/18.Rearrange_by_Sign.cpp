@@ -35,7 +35,7 @@ void first_try(int arr[], int size)
     //SC -> O(1) 
 }
 
-//TC-> O(N) and SC -> O(N)
+//TC-> O(N+N/2) and SC -> O(N)
 void brute()
 {
     //Extract all the +/- elements and then put them back
