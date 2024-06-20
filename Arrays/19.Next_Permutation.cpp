@@ -70,7 +70,7 @@ void optimal(int arr[], int size)
         }
     }
 
-    //sort the right portion to get the lowest possible value ahead
+    //Reverse the right portion to get the lowest possible value ahead
     if (bp==0) //Last permutation -> Set to Initial Permutations
     {
         reverse(arr,arr+size);
@@ -83,8 +83,8 @@ void optimal(int arr[], int size)
         cout << arr[i] << " ";
     }
     
-    //TC -> O(N) + O(N) + O(N*Log(N))
-    //bp + finding swap element + sort
+    //TC -> O(N) + O(N) + O(N)
+    //bp + finding swap element + reverse (Better than Sort -> N*LogN)
 
     
 }
