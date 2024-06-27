@@ -5,7 +5,6 @@ void optimal(vector<int>& arr, int k)
 {
     //Use the concept of prefix sum
     //Number of sub-arrays ending at particular element(prefix_sum = s) and has a sum = k is equal to the number of times prefix sum behind became s-k
-
     //Store the prefix-sums in a map, <psum,count>
     map<int,int> ps;
     ps[0] = 1;
@@ -19,6 +18,9 @@ void optimal(vector<int>& arr, int k)
         ps[sum]++;
     }
     cout << count;
+
+    //TC -> ordered map: O(N*Log(N))
+    //SC -> O(n)
 }
 
 int main()
