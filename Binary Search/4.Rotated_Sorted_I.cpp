@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//Unique Elements Only
 int search(vector<int> &v, int target)
 {
     int low = 0, high = v.size() - 1;
