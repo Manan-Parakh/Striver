@@ -2,6 +2,7 @@
 using namespace std;
 
 //An idea that did not work. Nonetheless let's preserve the logic
+//This Idea will work, just implement a checking step at the end -> An Idea that popped while driving
 vector<int> first_try(vector<int>& vec)
 {
     vector<int> ans;
