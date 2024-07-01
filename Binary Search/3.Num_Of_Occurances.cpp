@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Understand: These are kind of template codes! -> Used in Problems...
 //LeetCode Accepted Solution
 vector<int> searchRange(vector<int> &v, int target)
 {
