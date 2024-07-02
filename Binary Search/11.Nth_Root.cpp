@@ -2,6 +2,7 @@
 using namespace std;
 
 //Compiler Error, but ok
+//Use pow instead of loop -> O(logn)
 int NthRoot(int n, int m)
 {
     int low = 0, high = m;
