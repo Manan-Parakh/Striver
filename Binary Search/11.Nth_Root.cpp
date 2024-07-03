@@ -5,7 +5,7 @@ using namespace std;
 //Use pow instead of loop -> O(logn)
 int NthRoot(int n, int m)
 {
-    int low = 0, high = m;
+    int low = 1 , high = m;
     while (low <= high)
     {
         int mid = (high + low) / 2;
