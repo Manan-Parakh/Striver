@@ -40,7 +40,7 @@ int shipWithinDays(vector<int> &weights, int days)
     {
         int mid = low + (high - low) / 2;
         int req_days_mid = days_req(weights, mid);
-        if(req_days_mid <= days)
+        if(req_days_mid <=c days)
         {
             // We can try to increase the wcap
             high = mid - 1;
