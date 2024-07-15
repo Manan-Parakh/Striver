@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//TC-> O(2^t * k)
+//SC -> O(target) as the max number of calls simultaneously: target
+
 void rec(vector<int>& arr, vector<int>& a, int index, int target)
 {
     //Base Condition

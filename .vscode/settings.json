@@ -19,6 +19,10 @@
         "limits": "cpp",
         "type_traits": "cpp",
         "xstddef": "cpp",
-        "xtr1common": "cpp"
+        "xtr1common": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstring": "cpp"
     }
 }
