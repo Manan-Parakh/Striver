@@ -3,7 +3,7 @@ using namespace std;
 int fj(vector<int> &height, int n)
 {
     //From stair i it can go to either i+1 or i-1th stair\
-    //s denotes the current stair
+    //s denotes the crrent stair
 
     vector<int> dp(n, -1);
     dp[0] = 0;                          // Energy req to go to 1st stair
